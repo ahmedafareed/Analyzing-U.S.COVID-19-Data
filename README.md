@@ -22,13 +22,13 @@ The EDA examines:
 ### 2. Statistical Hypothesis Testing
 
 Two primary research hypotheses were investigated:
-- **Association between patient demographic factors and COVID-19 mortality:** Evaluated using logistic regression, with significant associations found for sex, race, and ethnicity at the $$ \alpha = 0.05 $$ level, though not all variables reached significance.
+- **Association between patient demographic factors and COVID-19 mortality:** Evaluated using logistic regression, with significant associations found for sex, race, and ethnicity at the alpha = 0.05 level, though not all variables reached significance.
 - **Association between underlying medical conditions and mortality:** Addressed using the Chi-square test of independence, with the null hypothesis strongly rejected (p-value ≪ 0.05), confirming a robust relationship.
 
 ### 3. Regression and Machine Learning Modeling
 
 - **Ordinary Least Squares (OLS) Regression**: Modeled death as a function of multiple demographic and clinical predictors.
-  - Model $$ R^2 $$ ranged from 0.689 to 0.82 after introducing higher-order terms and controlling for outliers
+  - Model  R^2 ranged from 0.689 to 0.82 after introducing higher-order terms and controlling for outliers
   - Significant predictors included sex, certain age groups, and ICU admission status
 - **Random Forest Classifier**: Implemented for mortality prediction, achieving approximately 97% classification accuracy, with notably high precision for survival prediction
 
@@ -39,12 +39,6 @@ This section extends the analysis to answer focused questions, including:
 - Impact of the pandemic on employment loss and stimulus payments across the states
 - Correlation of household income with delays in medical treatment
 - Temporal and seasonal patterns in case identification and clinical processes
-
-## Data Processing and Methodology
-
-- Extensive data cleaning, including batch processing to handle over 19 million initial records
-- Addressing missing values, categorical encodings, and data normalization as appropriate
-- Use of Python libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scipy`, `statsmodels`, `scikit-learn`
 
 ## Principal Findings and Implications
 
